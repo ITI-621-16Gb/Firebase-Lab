@@ -35,11 +35,8 @@
 	<!-- initilized firebase object -->
 	<script defer src="/__/firebase/init.js"></script>
 
-  <!-- calling user authentication functions -->
-				<script defer src="js/users/islogin.js"></script>
-
 </head>
-<body class="container" onload="validar()">
+<body class="container">
 	<header class="header row">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<div class="container-fluid">
@@ -83,6 +80,19 @@
 	</header>
 
 	<main class="row">
+    <h4>Sign up</h4>
+			<div>
+				<label for="txtNombre">Nombre:</label><br>
+				<input type="text" id="txtNombre" required><br><br>
+
+				<label for="txtEmail">Correo electrónico:</label><br>
+				<input type="text" id="txtEmail" required><br><br>
+
+				<label for="txtContra">Contraseña:</label><br>
+				<input type="password" id="txtContra" required>
+				<br><br>
+				<input type="button" id="btnInsUser" name="btnInsUser" value="Insertar Usuario">
+			</div>
 		
 	</main>
 
@@ -94,5 +104,7 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"></script>
 
+      <!-- load js code to register a new user  -->
+			<script defer src="js/users/signup.js"></script>
 </body>
 </html>
